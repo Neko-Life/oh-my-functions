@@ -4,8 +4,8 @@ let listening = false;
 let resQueue = "";
 
 process.stdin.on("data", (buf) => {
-    const res = buf.toString().slice(0, -1);
     if (listening) {
+	const res = buf.toString().slice(0, -1);
         resQueue = res;
     }
 });
