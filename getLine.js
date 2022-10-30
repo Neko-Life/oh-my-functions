@@ -35,7 +35,7 @@ const getLastInput = () => {
  */
 const getLine = async (prompt, _interval = 50) => {
     return new Promise(async (r, j) => {
-        if (listening) j(new Error("Already listening to stdin"));
+        if (listening) return j(new Error("Already listening to stdin"));
 
         if (prompt?.length) {
             process.stdout.write(prompt);
