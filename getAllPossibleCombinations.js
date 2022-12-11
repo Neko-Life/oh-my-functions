@@ -57,7 +57,7 @@ const getAllPossibleCombinations = (arr) => {
   return result;
 }
 
-console.log(getAllPossibleCombinations(process.argv.slice(2)));
+// console.log(getAllPossibleCombinations(process.argv.slice(2)));
 
 module.exports = {
   getAllPossibleCombinations,
